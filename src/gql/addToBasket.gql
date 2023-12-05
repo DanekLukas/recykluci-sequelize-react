@@ -1,0 +1,3 @@
+mutation addToBasket($id: Int!) {
+  addToBasket(id: $id)
+}

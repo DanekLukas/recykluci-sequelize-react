@@ -1,0 +1,25 @@
+query getHomepage {
+    homepage {
+        datum {
+            id
+            name
+            safename
+            price
+            category {
+                name
+                safename
+            }
+            id_image {
+                imageName
+            }
+            baskets {
+                date
+            }
+            sells_items {
+                sell {
+                done
+                }
+            }
+        }
+    }
+}

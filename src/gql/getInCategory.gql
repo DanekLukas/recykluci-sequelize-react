@@ -1,0 +1,25 @@
+query getInCategory($name: String) {
+  category(categorySafename: [$name], limit: 1) {
+    safename
+    data {
+      id
+      name
+      safename
+      price
+      category {
+        safename
+      }
+      id_image {
+        imageName
+      }
+      baskets {
+        date
+      }
+      sells_items {
+        sell {
+          done
+        }
+      }
+    }
+  }
+}

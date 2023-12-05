@@ -1,0 +1,28 @@
+query getDetail($name: String) {
+  data(safename: [$name]) {
+    id
+    name
+    safename
+    text
+    price
+    baskets {
+      id
+      date
+    }
+    category {
+      id
+      name
+      safename
+    }
+    sells_items {
+      id
+      sell {
+        id
+        done
+      }
+    }
+  }
+  image(dataSafename: [$name]) {
+    imageName
+  } 
+}

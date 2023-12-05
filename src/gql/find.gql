@@ -1,0 +1,22 @@
+query find($name: String) {
+  find(expr: $name, limit: 1) {
+    id
+    name
+    safename
+    id_image {
+      imageName
+    }
+    baskets {
+      date
+    }
+    category {
+      name
+      safename
+    }
+    sells_items {
+      sell {
+        done
+      }
+    }
+  }
+}
